@@ -17,7 +17,7 @@ int main()
   GPIO_Init(GPIOD, &GPIO_InitStruct);
   
   // GPIOD-PIN-15 ON
-  GPIO_SetBits(GPIOD, GPIO_Pin_14);
+  GPIO_SetBits(GPIOD, GPIO_Pin_15);
   
   return 0;
 }
