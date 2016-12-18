@@ -5,10 +5,10 @@
 * @mail    : mail@hakankaya.kim
 * @date    : 18.12.2016
 * @brief   : Kart uzerinde bulunan USER butonuyla yine kart uzerinde bulunan
-* ledleri yakip söndürmek
+* ledleri yakip sondurmek
 *******************************************************************************/
 
-// Kütüphaneler
+// Kutuphaneler
 #include "stm32f4xx.h"
 //#include "stm32f4xx_rcc.h"    // system_conf.h icerisinden cagrildi
 //#include "stm32f4xx_gpio.h"   // system_conf.h icerisinden cagrildi
@@ -40,7 +40,7 @@ void GPIO_Hazirliklari(void){
     // A ve D portu icin RCC aktiflestirme
     RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD | RCC_AHB1Periph_GPIOA, ENABLE);
     
-    // D portu icin pointer vektoru tanýmlanmasý
+    // D portu icin pointer vektoru tanimlanmasi
     GPIO_InitTypeDef GPIO_D;
     
     // Port ayarlamalari
@@ -56,7 +56,7 @@ void GPIO_Hazirliklari(void){
     // A portu icin nesne tanimlanmasi
     GPIO_InitTypeDef GPIO_A;
     
-    // A Portu ayarlamalarý
+    // A Portu ayarlamalari
     GPIO_A.GPIO_Pin = GPIO_Pin_0;
     GPIO_A.GPIO_Mode = GPIO_Mode_IN;
     GPIO_A.GPIO_OType = GPIO_OType_PP;
