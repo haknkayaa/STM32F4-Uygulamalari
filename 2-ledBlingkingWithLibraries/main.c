@@ -24,9 +24,7 @@ int main(void) {
    GPIO_Hazirliklari();
    
    // Sonsuz dongu
-    while (1) {
-       
-       
+    while (1) {     
         GPIO_SetBits(GPIOD, GPIO_Pin_All);
         canimDelayim(2000000);
         GPIO_ResetBits(GPIOD, GPIO_Pin_All);
