@@ -44,7 +44,7 @@ void canimDelayim(unsigned long zaman){
 void GPIO_Hazirliklari(void){
    
     // A ve D portu icin RCC aktiflestirme
-    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD | RCC_AHB1Periph_GPIOA, ENABLE);
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
     
     // D portu icin pointer vektoru tanımlanması
     GPIO_InitTypeDef GPIO_D;
@@ -58,18 +58,6 @@ void GPIO_Hazirliklari(void){
     
     // Vektorun tanimlanmasi
     GPIO_Init(GPIOD, &GPIO_D);
-      
-    // A portu icin nesne tanimlanmasi
-    GPIO_InitTypeDef GPIO_A;
     
-    // A Portu ayarlamaları
-    GPIO_A.GPIO_Pin = GPIO_Pin_0;
-    GPIO_A.GPIO_Mode = GPIO_Mode_IN;
-    GPIO_A.GPIO_OType = GPIO_OType_PP;
-    GPIO_A.GPIO_PuPd = GPIO_PuPd_DOWN;
-    GPIO_A.GPIO_Speed = GPIO_Speed_100MHz;
-
-    // Vektorun tanimlanmasi
-    GPIO_Init(GPIOA, &GPIO_A);
    
 }
