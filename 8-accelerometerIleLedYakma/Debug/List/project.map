@@ -1,0 +1,278 @@
+###############################################################################
+#
+# IAR ELF Linker V7.50.2.10312/W32 for ARM                28/Dec/2016  15:50:23
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Exe\project.out
+#    Map file     =  
+#        D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\List\project.map
+#    Command line =  
+#        "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj\buton.o"
+#        "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj\ddI2C1.o"
+#        "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj\ddSpi.o"
+#        "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj\ddUsart2.o"
+#        "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj\l3gd20.o"
+#        "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj\lsm303dlhc.o"
+#        "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj\main.o"
+#        "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj\startup_stm32f411xe.o"
+#        "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj\system_stm32f4xx.o"
+#        -o "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Exe\project.out"
+#        --map "D:\Akademik\ARM\IAR
+#        Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\List\project.map"
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\config\linker\ST\stm32f411xE.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0807ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2001ffff] { rw, block CSTACK, block HEAP };
+
+  Section          Kind        Address    Size  Object
+  -------          ----        -------    ----  ------
+"A1":                                    0x198
+  .intvec          ro code  0x08000000   0x198  startup_stm32f411xe.o [1]
+                          - 0x08000198   0x198
+
+"P1":                                    0x798
+  .text            ro code  0x08000198   0x204  ddI2C1.o [1]
+  .text            ro code  0x0800039c   0x176  lsm303dlhc.o [1]
+  .text            ro code  0x08000514   0x126  main.o [1]
+  .text            ro code  0x0800063c    0xc0  ddUsart2.o [1]
+  .text            ro code  0x080006fc    0x5c  system_stm32f4xx.o [1]
+  .text            ro code  0x08000758    0x40  zero_init3.o [4]
+  .text            ro code  0x08000798    0x28  data_init.o [4]
+  .iar.init_table  const    0x080007c0    0x10  - Linker created -
+  .text            ro code  0x080007d0    0x1a  cmain.o [4]
+  .text            ro code  0x080007ea     0x4  low_level_init.o [3]
+  .text            ro code  0x080007ee     0x4  exit.o [3]
+  .text            ro code  0x080007f4     0xa  cexit.o [4]
+  .text            ro code  0x08000800    0x14  exit.o [5]
+  .text            ro code  0x08000814    0x10  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000824     0xc  cstartup_M.o [4]
+  .text            ro code  0x08000830     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000834     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000838     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800083c     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000840     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000844     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000848     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800084c     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000850     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000854     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000858     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800085c     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000860     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000864     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000868     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800086c     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000870     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000874     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000878     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800087c     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000880     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000884     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000888     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800088c     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000890     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000894     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000898     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800089c     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008a0     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008a4     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008a8     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008ac     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008b0     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008b4     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008b8     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008bc     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008c0     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008c4     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008c8     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008cc     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008d0     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008d4     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008d8     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008dc     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008e0     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008e4     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008e8     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008ec     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008f0     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008f4     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008f8     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x080008fc     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000900     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000904     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000908     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800090c     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000910     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000914     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000918     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800091c     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000920     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000924     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x08000928     0x4  startup_stm32f411xe.o [1]
+  .text            ro code  0x0800092c     0x4  startup_stm32f411xe.o [1]
+  .rodata          const    0x08000930     0x0  zero_init3.o [4]
+                          - 0x08000930   0x798
+
+"P2", part 1 of 2:                        0xd4
+  .bss             zero     0x20000000    0x64  ddUsart2.o [1]
+  .bss             zero     0x20000064    0x64  ddUsart2.o [1]
+  .bss             zero     0x200000c8     0x8  main.o [1]
+  .bss             zero     0x200000d0     0x1  ddUsart2.o [1]
+  .bss             zero     0x200000d1     0x1  ddUsart2.o [1]
+  .bss             zero     0x200000d2     0x1  ddUsart2.o [1]
+  .bss             zero     0x200000d3     0x1  lsm303dlhc.o [1]
+                          - 0x200000d4    0xd4
+
+"P2", part 2 of 2:                      0x2000
+  CSTACK                    0x200000d8  0x2000  <Block>
+    CSTACK         uninit   0x200000d8  0x2000  <Block tail>
+                          - 0x200020d8  0x2000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xd4:
+          0x20000000  0xd4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+D:\Akademik\ARM\IAR Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj: [1]
+    ddI2C1.o                   516
+    ddUsart2.o                 192               203
+    lsm303dlhc.o               374                 1
+    main.o                     294                 8
+    startup_stm32f411xe.o      680
+    system_stm32f4xx.o          92
+    ------------------------------------------------
+    Total:                   2 148               212
+
+command line: [2]
+    ------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                       4
+    low_level_init.o             4
+    ------------------------------------------------
+    Total:                       8
+
+rt7M_tl.a: [4]
+    cexit.o                     10
+    cmain.o                     26
+    cstartup_M.o                12
+    data_init.o                 40
+    zero_init3.o                64
+    ------------------------------------------------
+    Total:                     152
+
+shb_l.a: [5]
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
+
+    Gaps                         8
+    Linker created                       16    8 192
+----------------------------------------------------
+    Grand Total:             2 336       16    8 404
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x080007c0          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x080007d0          --   Gb  - Linker created -
+?main                   0x080007d1         Code  Gb  cmain.o [4]
+CSTACK$$Base            0x200000d8          --   Gb  - Linker created -
+CSTACK$$Limit           0x200020d8          --   Gb  - Linker created -
+I2C1_Read_Single_Register
+                        0x0800023d   0xaa  Code  Gb  ddI2C1.o [1]
+I2C1_Setup              0x08000199   0xa4  Code  Gb  ddI2C1.o [1]
+I2C1_Write_Single_Register
+                        0x080002e7   0x7e  Code  Gb  ddI2C1.o [1]
+LSM303DLHC_AccInit      0x0800039d   0x50  Code  Gb  lsm303dlhc.o [1]
+LSM303DLHC_AccReadXYZ   0x080003f1  0x122  Code  Gb  lsm303dlhc.o [1]
+NVIC_SetPriority        0x08000531   0x22  Code  Lc  main.o [1]
+NVIC_SetPriorityGrouping
+                        0x08000515   0x1c  Code  Lc  main.o [1]
+RX_Buffer               0x20000000   0x64  Data  Gb  ddUsart2.o [1]
+RX_Buffer_Pointer       0x200000d0    0x1  Data  Gb  ddUsart2.o [1]
+Region$$Table$$Base     0x080007c0          --   Gb  - Linker created -
+Region$$Table$$Limit    0x080007d0          --   Gb  - Linker created -
+SysTick_Config          0x08000553   0x2e  Code  Lc  main.o [1]
+SysTick_Handler         0x08000639    0x2  Code  Gb  main.o [1]
+SystemInit              0x080006fd   0x40  Code  Gb  system_stm32f4xx.o [1]
+TX_Buffer               0x20000064   0x64  Data  Gb  ddUsart2.o [1]
+TX_Buffer_Pointer       0x200000d1    0x1  Data  Gb  ddUsart2.o [1]
+TX_NumberofTransfer     0x200000d2    0x1  Data  Gb  ddUsart2.o [1]
+USART2_IRQHandler       0x0800063d   0xa0  Code  Gb  ddUsart2.o [1]
+__cmain                 0x080007d1         Code  Gb  cmain.o [4]
+__exit                  0x08000801   0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x08000799   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x08000825         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x08000759   0x40  Code  Gb  zero_init3.o [4]
+__low_level_init        0x080007eb    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f411xe.o [1]
+_call_main              0x080007dd         Code  Gb  cmain.o [4]
+_exit                   0x080007f5         Code  Gb  cexit.o [4]
+_main                   0x080007e7         Code  Gb  cmain.o [4]
+data                    0x200000c8    0x8  Data  Lc  main.o [1]
+exit                    0x080007ef    0x4  Code  Gb  exit.o [3]
+main                    0x08000581   0x86  Code  Gb  main.o [1]
+
+
+[1] = D:\Akademik\ARM\IAR Calismalar\STM32F4-Examples\ders-9-i2c\ders-9-i2c\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  2 336 bytes of readonly  code memory
+     16 bytes of readonly  data memory
+  8 404 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
